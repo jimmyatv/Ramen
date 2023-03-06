@@ -27,10 +27,6 @@ body {
     background-color: var(--primary);
 }
 
-.carousel-caption {
-    margin-bottom: 300px;
-}
-
 /* our JS - Grocery List */
 
 .container h1 {
