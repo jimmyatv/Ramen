@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary: #061121;
+    --secondary: #01E1FF;
+    --light: #fff;
+    --dark: #000;
+
+    --transition: .3s ease;
+    --lineHeight: 32px;
+    --bodyFonts: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bodyFonts);
+    line-height: var(--lineHeight);
+}
+
+.bg-bodyColor {
+    background-color: var(--primary);
+}
+
+.carousel-caption {
+    margin-bottom: 300px;
+}
+
+/* our JS - Grocery List */
+:root {
+    --primary: rgb(76, 76, 155);
+}
+
+body {
+    background-image: url(./img/soping.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container h1 {
+    margin-top: 200px;
+    color: var(--primary)
+}
+
+.fa-basket-shopping {
+    font-size: 50px;
+    margin-top: 25px;
+    color: var(--primary);
+    
+}
+
+.fa-basket-shopping:hover {
+    color: green;
+    transition: .3s linear;
+}
+
+.fa-eraser {
+    color: var(--primary);
+    font-size: xx-large;
+}
+
+.fa-eraser:hover {
+    color: red;
+    transition: .3s linear;
+}
+
+td {
+    font-size: 32px;
+}
+
+td:first-child {
+    width: 100%;
+}
+
+.shoppingBasket {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppingBasket hr {
+    margin-bottom: 40px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin: 0 10px;
+}
+
+.fa-circle-arrow-right {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.fa-circle-arrow-right:hover {
+    opacity: 0.8;
+    transition: .2s linear;
+}
+
+.fa-circle-arrow-left {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.fa-circle-arrow-left:hover {
+    opacity: 0.8;
+    transition: .2s linear;
+}
+
+
