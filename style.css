@@ -2,7 +2,7 @@
 
 :root {
     --primary: #061121;
-    --bascet: rgb(76, 76, 155);
+    --basket: rgb(76, 76, 155);
     --secondary: #01E1FF;
     --light: #fff;
     --dark: #000;
@@ -27,31 +27,40 @@ body {
     background-color: var(--primary);
 }
 
+.hr {
+    width: 250px;
+    margin: auto;
+    height: 5px;
+    background-color: var(--secondary);
+}
+
+
+
 /* our JS - Grocery List */
 
 .container h1 {
     margin-top: 200px;
-    color: var(--bascet);
+    color: var(--basket);
 }
 
-.fa-basket-shopping {
+.basket {
     font-size: 50px;
     margin-top: 25px;
-    color: var(--bascet);
+    color: var(--basket);
     
 }
 
-.fa-basket-shopping:hover {
+.basket:hover {
     color: green;
     transition: .3s linear;
 }
 
-.fa-eraser {
-    color: var(--bascet);
+.clear {
+    color: var(--basket);
     font-size: xx-large;
 }
 
-.fa-eraser:hover {
+.clear:hover {
     color: red;
     transition: .3s linear;
 }
@@ -69,9 +78,6 @@ td:first-child {
     flex-direction: column;
 }
 
-.shoppingBasket hr {
-    margin-bottom: 40px;
-}
 
 .page {
     display: flex;
@@ -82,24 +88,31 @@ td:first-child {
     margin: 0 10px;
 }
 
-.fa-circle-arrow-right {
+.arrows{
     font-size: 30px;
-    color: var(--bascet);
+    color: var(--basket);
 }
 
-.fa-circle-arrow-right:hover {
+.arrows:hover {
     opacity: 0.8;
     transition: .2s linear;
 }
 
-.fa-circle-arrow-left {
-    font-size: 30px;
-    color: var(--bascet);
+
+
+footer img {
+    pointer-events: none;
 }
 
-.fa-circle-arrow-left:hover {
-    opacity: 0.8;
-    transition: .2s linear;
-}
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .navbar-brand { 
+        flex: 2;
+    }
 
+    .cta div {
+        align-items: center;
+    }
+    
+}
 

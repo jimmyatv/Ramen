@@ -14,11 +14,11 @@
 
 <body class="bg-bodyColor">
     <!-- NavBar -->
-    <section class="container-fluid hero navigation bg-bodyColor">
+    <header class="container-fluid hero navigation bg-bodyColor">
         <nav class="navbar navbar-expand-lg p-4 border-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#"><img class="w-75" src="./img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -48,10 +48,10 @@
                 </div>
             </div>
         </nav>
-    </section>
+    </header>
 
     <!-- Hero section -->
-    <header class="container-fluid hero">
+    <section class="container-fluid hero">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Diamond -->
     <section class="container diamond py-5">
@@ -144,40 +144,44 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta container-fluid py-5">
-        <div class="row text-center">
+    <section class="cta container-fluid py-5 d-flex flex-column">
+        <h4 class="display-3 text-info pt-5 text-center">Our Mission</h4>
+        <div class="row text-center py-5">
             <div class="col-md-6">
                 <img class="img-fluid" src="./img/cta1.png" alt="">
             </div>
 
             <div class="col-md-6 d-flex flex-column justify-content-center text-start">
-                <h4 class="w-50 text-start text-info display-5">Get Better Leads. Increase Your Rate & Margins!</h4>
+                <h4 class="pt-3 w-50 text-start text-info display-5">Get Better Leads. Increase Your Rate & Margins!</h4>
                 <p class="w-50 text-start text-white">Our contact form allows you to pre-filter project requests so that
                     you no longer need a protracted back and forth before deciding if the project is a good fit</p>
                 <button type="button" class="btn btn-info px-3 text-uppercase fw-bold me-3 w-50">Singin/Sing up</button>
             </div>
         </div>
 
-        <div class="row text-center py-5">
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-                <h4 class="text-info text-center display-5 ms-auto">Build Your Brand</h4>
-                <p class="text-white w-50 ms-auto text-end">ramen.network allows you to control of your
-                    personal/business brands. We haveve written a free ebook to help you increase your brand value</p>
-                <button type="button" class="btn btn-info text-uppercase fw-bold w-50 ms-auto">Singin/Sing up</button>
-            </div>
+        <div class="hr"></div>
 
+        <div class="row text-center py-5">
             <div class="col-md-6">
                 <img class="img-fluid" src="./img/cta2.png" alt="">
             </div>
+
+            <div class="col-md-6 d-flex flex-column justify-content-center text-start">
+                <h4 class="pt-3 w-50 text-start text-info display-5">Build Your Brand</h4>
+                <p class="w-50 text-start text-white">ramen.network allows you to control of your personal/business brands. We haveve written a free ebook to help you increase your brand value</p>
+                <button type="button" class="btn btn-info px-3 text-uppercase fw-bold me-3 w-50">Singin/Sing up</button>
+            </div>
         </div>
 
-        <div class="row text-center">
+        <div class="hr"></div>
+
+        <div class="row text-center py-5">
             <div class="col-md-6">
                 <img class="img-fluid" src="./img/cta3.png" alt="">
             </div>
 
             <div class="col-md-6 d-flex flex-column justify-content-center text-start">
-                <h4 class="w-50 text-start text-info display-5">Turn Prospects Into Repeat Customers</h4>
+                <h4 class="pt-3 w-50 text-start text-info display-5">Turn Prospects Into Repeat Customers</h4>
                 <p class="w-50 text-start text-white">By owning and controlling your reputation through the ramen.
                     platform, you can easily and quickly turn cold prospects into becoming valued customers</p>
                 <button type="button" class="btn btn-info px-3 text-uppercase fw-bold me-3 w-50">Learn more</button>
@@ -189,8 +193,8 @@
     <!-- footer -->
     <footer class="border-top container-fluid p-0">
         <section class="footer container-fluid position-relative ps-0 pe-0">
-            <img class="img-fluid w-100" src="./img/footer.png" alt="">
-            <div class=" container-fluid d-flex justify-content-center align-items-center row text-center text-white position-absolute top-50 start-50 translate-middle">
+            <img class="position-absolute top-50  translate-middle-y img-fluid w-100 h-100" src="./img/footer.png" alt="">
+            <div class=" container-fluid d-flex justify-content-center align-items-center row text-center text-white py-5">
                 <div class="col-md-3 text-center">
                     <a href=""><img class="img-fluid w-75 pb-3" src="./img/logo.png" alt=""></a>
                     <h5 class="my-3">let's connect</h5>
@@ -235,7 +239,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
 </body>
 
 </html>

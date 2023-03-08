@@ -33,7 +33,7 @@ const read = (list) => {
         groceryListElement.innerHTML += `
         <tr>
             <td>${element}</td>
-            <td><button class="btn" data-itemvalue="${element}" onClick="deleteItem(event)"><i class="fa-solid fa-eraser"></i></button></td>
+            <td><button class="btn" data-itemvalue="${element}" onClick="deleteItem(event)"><i class="clear fa-solid fa-eraser"></i></button></td>
         </tr>`
     })
     list.length % 6 === 0 ? maxPage = list.length / 6 : maxPage = Math.floor(list.length / 6) + 1;
