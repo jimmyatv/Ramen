@@ -30,7 +30,7 @@ body {
 .hr {
     width: 250px;
     margin: auto;
-    height: 5px;
+    height: 4px;
     background-color: var(--secondary);
 }
 
@@ -114,5 +114,9 @@ footer img {
         align-items: center;
     }
     
+    .hr {
+        width: 120px;
+        height: 3px;
+    }
 }
 
